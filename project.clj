@@ -3,10 +3,14 @@
                  [org.clojure/clojurescript "1.9.456"]
 
                  ;; Frontend
-                 [cljsjs/react "18.2.0-0"]
-                 [cljsjs/react-with-addons "15.6.1-0"]
-                 [cljsjs/react-dom "18.2.0-0"]
-                 [cljsjs/react-dom-server "18.2.0-0"]
+
+[cljsjs/react "17.0.2-0"]
+[cljsjs/react-dom "17.0.2-0"]
+[cljsjs/react-dom-server "17.0.2-0"]
+                 
+                 ;[cljsjs/react "16.1.0-0"]
+                 ;[cljsjs/react-dom "16.1.0-0"]
+                 ;[cljsjs/react-dom-server "16.1.0-0"]
                  [reagent "1.1.1" :exclusions [cljsjs/react cljsjs/react-dom cljsjs/react-dom-server]]
                  [re-frame "1.3.0"]
                  [secretary "1.2.3"]

@@ -1,5 +1,6 @@
 (ns redolist.core
     (:require [reagent.core :as reagent]
+              [reagent.dom :as reagent-dom]
               [re-frame.core :as re-frame]
               [redolist.events]
               [redolist.subs]
@@ -14,7 +15,7 @@
 
 (defn mount-root []
   (re-frame/clear-subscription-cache!)
-  (reagent/render [views/main-panel]
+  (reagent-dom/render [views/main-panel]
                   (.getElementById js/document "app")))
 
 (defn ^:export init []
